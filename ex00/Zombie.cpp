@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 11:57:32 by hacharka          #+#    #+#             */
-/*   Updated: 2026/01/28 17:29:54 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/01/29 18:48:14 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ Zombie::~Zombie()
 
 void	Zombie::announce()
 {
-	std::cout << name << " BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << name << " : BraiiiiiiinnnzzzZ..." << std::endl;
 }
