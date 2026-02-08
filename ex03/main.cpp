@@ -5,17 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 14:51:29 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 19:42:08 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/07 20:08:33 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/08 17:05:23 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "HumanA.h"
+#include "HumanB.h"
+#include "Weapon.h"
 
-int	main()
+int main()
 {
-	Zombie *array;
-
-	array = zombieHorde(10, "hajar");
-	delete[] array;
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+	return 0;
 }

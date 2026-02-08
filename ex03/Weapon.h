@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 14:51:29 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 19:42:08 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/07 20:08:40 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/08 16:51:02 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#ifndef WEAPON_H
+#define WEAPON_H
 
-int	main()
+#include <iostream>
+#include <string>
+
+class Weapon
 {
-	Zombie *array;
-
-	array = zombieHorde(10, "hajar");
-	delete[] array;
-}
+	private:
+		std::string type;
+	public:
+		Weapon(std::string type);
+		~Weapon();
+		const std::string&	getType() const;
+		void	setType(std::string newtype);
+};
+#endif

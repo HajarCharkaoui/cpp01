@@ -5,17 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 14:51:29 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 19:42:08 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/07 18:11:18 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/08 14:32:29 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.h"
 
-int	main()
-{
-	Zombie *array;
 
-	array = zombieHorde(10, "hajar");
-	delete[] array;
+int main()
+{
+	Zombie *zombie;
+	zombie = newZombie("hajar");
+	zombie->announce();
+	zombie->~Zombie();
+	delete zombie;
+	// randomChump("Tweety");
 }

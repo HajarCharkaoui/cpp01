@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 14:51:29 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 19:42:08 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/07 20:08:17 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/08 16:46:55 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "HumanB.h"
 
-int	main()
+HumanB::HumanB(std::string name) : name(name), weapon(NULL) {};
+
+void	HumanB::setWeapon(Weapon& w) 
 {
-	Zombie *array;
+	weapon = &w;
+}
 
-	array = zombieHorde(10, "hajar");
-	delete[] array;
+void	HumanB::attack()
+{
+	if (weapon)
+		std::cout << name << " attack with their " << weapon->getType() << std::endl;
+	else
+		std::cout << name << " has no weapon to attack with!" << std::endl;
 }

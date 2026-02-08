@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 14:51:29 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 19:42:08 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/07 20:08:30 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/08 15:59:59 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#ifndef HUMANB_H
+#define HUMANB_H
 
-int	main()
+#include "Weapon.h"
+
+class HumanB
 {
-	Zombie *array;
+	private:
+		std::string	name;
+		Weapon*	weapon;
+	public:
+		HumanB(std::string name);
+		void	setWeapon(Weapon& w);
+		void	attack();
+};
 
-	array = zombieHorde(10, "hajar");
-	delete[] array;
-}
+#endif

@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 16:59:23 by hacharka          #+#    #+#             */
-/*   Updated: 2026/01/28 17:35:29 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/07 18:12:18 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,3 @@ void	randomChump(std::string name)
 	obj.setName(name);
 	obj.announce();
 }
-
-// int	main()
-// {
-// 	randomChump("Hajar");
-// 	return (0);
-// }

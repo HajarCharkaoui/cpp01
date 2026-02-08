@@ -1,19 +1,20 @@
-NAME = BraiiinzzZ
+NAME = ex02
 
 CC = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
+
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@ $(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp Zombie.h
+%.o: %.cpp 
 	@ $(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
