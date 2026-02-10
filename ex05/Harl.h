@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 18:39:45 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/10 17:39:12 by hacharka         ###   ########.fr       */
+/*   Created: 2026/02/10 17:43:59 by hacharka          #+#    #+#             */
+/*   Updated: 2026/02/10 17:45:45 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replacement.h"
+#ifndef HARL_H
+#define HARL_H
 
-int	main(int ac, char **av)
+class Harl
 {
-	if (ac == 4)
-	{
-		Replacement	ob(av[1], av[2], av[3]);
-		ob.replace();
-	}
-	else
-		std::cerr << "Invalide number of arguments!"<< std::endl;
-	return (0);
-}
+	
+};
+#endif

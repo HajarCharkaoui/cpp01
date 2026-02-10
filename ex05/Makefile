@@ -1,10 +1,10 @@
-NAME = ex04
+NAME = ex05
 
 CC = c++
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Replacement.cpp
+SRC = main.cpp Harl.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@ $(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp Replacement.h
+%.o: %.cpp Harl.h
 	@ $(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
