@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 16:59:23 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 18:12:18 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/11 14:50:59 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	randomChump(std::string name)
 {
-	Zombie	obj;
+	Zombie	obj(name);
 
 	obj.setName(name);
 	obj.announce();

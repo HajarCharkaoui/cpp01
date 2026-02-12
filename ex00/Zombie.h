@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 11:57:28 by hacharka          #+#    #+#             */
-/*   Updated: 2026/01/27 12:44:32 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/11 14:43:07 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Zombie{
 	public:
 		std::string	getName() const;
 		void	setName(std::string name);
-		Zombie();
+		Zombie(std::string name);
 		~Zombie();
 		void announce(void);
 } ;

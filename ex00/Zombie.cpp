@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 11:57:32 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/07 18:17:28 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/11 15:29:10 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ void	Zombie::setName(std::string name)
 	this->name = name;
 };
 
-Zombie::Zombie() : name("hajar") {};
+Zombie::Zombie(std::string name) : name(name) {};
 
 Zombie::~Zombie()
 {
-	std::cout << "The zombie " << this->name << " was destroyed" << std::endl;
+	std::cout << "The zombie " << name << " was destroyed" << std::endl;
 };
 
 void	Zombie::announce()
 {
-	std::cout << this->name << " : BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << name << " : BraiiiiiiinnnzzzZ..." << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 18:39:45 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/10 17:39:12 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/12 15:10:38 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ int	main(int ac, char **av)
 		ob.replace();
 	}
 	else
-		std::cerr << "Invalide number of arguments!"<< std::endl;
+		std::cout << "Invalide number of arguments!"<< std::endl;
 	return (0);
 }

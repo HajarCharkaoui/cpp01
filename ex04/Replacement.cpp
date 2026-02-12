@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 15:04:39 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/10 17:38:30 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/12 16:34:42 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,18 @@ void	Replacement::replace()
 
 	if (!file1)
 	{
-		std::cerr << "File could not be opened!"<< std::endl;
+		std::cout << "File could not be opened!"<< std::endl;
 		return ;
 	}
-	std::ofstream	file2(_filename.append(".replace"));
+	std::ofstream	file2(_filename +".replace");
 	if (!file2)
 	{
-		std::cerr << "File could not be opened!"<< std::endl;
+		std::cout << "File could not be opened!"<< std::endl;
 		return ;
+	}
+	if (_s1.empty()) {
+		std::cout << "Error: s1 cannot be empty." << std::endl;
+		return;
 	}
 	while (std::getline(file1, text))
 	{
