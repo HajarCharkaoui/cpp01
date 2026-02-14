@@ -6,7 +6,7 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 17:43:59 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/10 20:24:08 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/14 13:20:23 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class Harl
 		void	warning(void);
 		void	error(void);
 	public:
+		Harl();
+		~Harl();
 		void	complain(std::string level);
 };
 #endif

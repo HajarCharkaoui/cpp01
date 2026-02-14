@@ -6,12 +6,14 @@
 /*   By: hacharka <hacharka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 17:44:02 by hacharka          #+#    #+#             */
-/*   Updated: 2026/02/10 20:26:16 by hacharka         ###   ########.fr       */
+/*   Updated: 2026/02/14 13:21:22 by hacharka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.h"
 
+Harl::Harl() {}
+Harl::~Harl() {}
 
 void	Harl::debug(void)
 {
